@@ -1,0 +1,715 @@
+{
+	"info": {
+		"_postman_id": "91efad74-1953-4b39-a38e-d64558f6358e",
+		"name": "paypark-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12272183"
+	},
+	"item": [
+		{
+			"name": "user-vehicleType",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}vehicleType",
+					"host": [
+						"{{paypark-api}}vehicleType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}vehicle",
+					"host": [
+						"{{paypark-api}}vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_no",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}vehicle",
+					"host": [
+						"{{paypark-api}}vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_no",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}vehicle",
+					"host": [
+						"{{paypark-api}}vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}vehicle",
+					"host": [
+						"{{paypark-api}}vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-booking",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "owner_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "space_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "slot_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "arriving_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "leaving_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "total_amount",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}booking",
+					"host": [
+						"{{paypark-api}}booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-booking-cancel-id",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}booking/cancel/{id}",
+					"host": [
+						"{{paypark-api}}booking"
+					],
+					"path": [
+						"cancel",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-review",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{paypark-api}}review",
+					"host": [
+						"{{paypark-api}}review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-booking-id",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}booking/{id}",
+					"host": [
+						"{{paypark-api}}booking"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-booking",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}booking",
+					"host": [
+						"{{paypark-api}}booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}profile",
+					"host": [
+						"{{paypark-api}}profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile/update",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_no",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}profile/update",
+					"host": [
+						"{{paypark-api}}profile"
+					],
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile/picture/update",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}profile/picture/update",
+					"host": [
+						"{{paypark-api}}profile"
+					],
+					"path": [
+						"picture",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-setting/{id}/stripe",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}setting/{id}/stripe",
+					"host": [
+						"{{paypark-api}}setting"
+					],
+					"path": [
+						"{id}",
+						"stripe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-setting",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}setting",
+					"host": [
+						"{{paypark-api}}setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-forgot",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}forgot",
+					"host": [
+						"{{paypark-api}}forgot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-store",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}store",
+					"host": [
+						"{{paypark-api}}store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-reqForOTP",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_no",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}reqForOTP",
+					"host": [
+						"{{paypark-api}}reqForOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-verifyMe",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_no",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}verifyMe",
+					"host": [
+						"{{paypark-api}}verifyMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-login",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}login",
+					"host": [
+						"{{paypark-api}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-space",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "lat",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "lng",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{paypark-api}}space",
+					"host": [
+						"{{paypark-api}}space"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-space/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lat",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}space/{id}",
+					"host": [
+						"{{paypark-api}}space"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-space/{id}/zone",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "startTime",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "endTime",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{paypark-api}}space/{id}/zone",
+					"host": [
+						"{{paypark-api}}space"
+					],
+					"path": [
+						"{id}",
+						"zone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-facilities",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}facilities",
+					"host": [
+						"{{paypark-api}}facilities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-pp",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{paypark-api}}pp",
+					"host": [
+						"{{paypark-api}}pp"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "paypark-api",
+			"value": "https://saasmonks.in/App-Demo/PayPark-94521/api/user/"
+		}
+	]
+}
