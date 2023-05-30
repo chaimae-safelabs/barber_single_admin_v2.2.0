@@ -13,9 +13,9 @@
                 <div class="card">
                     <!-- Card header -->
                     <div class="card-header border-0">
-                        <span class="h3">{{ __('Client table') }}</span>
+                        <span class="h3">{{ __('Liste des clients') }}</span>
                         <button class="btn btn-primary addbtn float-right p-2 add_user" id="add_user"><i
-                                class="fas fa-plus mr-1"></i>{{ __('Add New') }}</button>
+                                class="fas fa-plus mr-1"></i>{{ __('Appliquer') }}</button>
                     </div>
 
                     <form action="{{ url('/admin/users') }}" method="post" class="ml-4" id="filter_revene_form">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="form-group col-3">
                                 <button type="submit" id="filter_btn"
-                                    class="btn btn-primary  rtl-date-filter-btn">{{ __('Apply') }}</button>
+                                    class="btn btn-primary  rtl-date-filter-btn">{{ __('Appliquer') }}</button>
                             </div>
                         </div>
                     </form>
